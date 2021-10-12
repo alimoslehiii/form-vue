@@ -88,6 +88,8 @@ export default {
   name: "CreatUser",
   data() {
     return {
+      // user: {},
+
       name: "",
       fatherName: "",
       userName: "",
@@ -97,7 +99,6 @@ export default {
       city: "",
       street: "",
       postalCode: "",
-      // user: {},
 
       nameErrorText: "",
       fatherErrorText: "",

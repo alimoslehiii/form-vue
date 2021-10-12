@@ -48,6 +48,45 @@ const user = {
       }
     },
 
+    // async storeUser({ commit }, user){
+    //   try {
+    //     const response = await axios.post('https://jsonplaceholder.typicode.com/users', {
+    //       name: user.name,
+    //       company: {
+    //         name : user.company.name
+    //       },
+    //       username: user.username,
+    //       phone: user.phone,
+    //       email: user.email,
+    //       address: {
+    //         zipcode: user.address.zipcode,
+    //         city: user.address.city,
+    //         street: user.address.street
+    //       }
+    //     })
+    //     commit('newUser', response.data)
+    //     // console.log(commit,response.data)
+    //
+    //     Swal.fire({
+    //       title: "User added",
+    //       icon: "success",
+    //       showConfirmButton: false,
+    //       timerProgressBar: true,
+    //       timer: 1000,
+    //       toast: true,
+    //       position: "top"
+    //     })
+    //
+    //   }catch (error){
+    //     Swal.fire({
+    //       title: "Error",
+    //       text: "There is a problem, please try again",
+    //       icon: "error",
+    //       confirmButtonText: "OK"
+    //     })
+    //   }
+    // },
+
     async storeUser({ commit }, [name,fatherName,userName,phone,email,birthID,city,street]){
       try {
         const response = await axios.post('https://jsonplaceholder.typicode.com/users', {
